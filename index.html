@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Module 4 — Hello &amp; Goodbye</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <div class="grid-bg"></div>
+
+  <main>
+    <header>
+      <span class="tag">MODULE 4</span>
+      <h1>Hello<span class="accent"> &amp; </span>Goodbye</h1>
+      <p class="subtitle">JavaScript Loop Assignment — Coursera Web Dev</p>
+    </header>
+
+    <section class="card">
+      <div class="card-header">
+        <span class="dot green"></span>
+        <span class="dot yellow"></span>
+        <span class="dot red"></span>
+        <span class="filename">script.js</span>
+      </div>
+      <div class="card-body">
+        <p class="comment">// Names starting with 'j' or 'J' → Goodbye</p>
+        <p class="comment">// All other names → Hello</p>
+        <pre id="code-preview"></pre>
+      </div>
+    </section>
+
+    <div class="btn-row">
+      <button id="runBtn">▶ Run Script</button>
+      <button id="clearBtn">✕ Clear</button>
+    </div>
+
+    <section class="output-panel">
+      <div class="output-header">
+        <span>Console Output</span>
+        <span id="count-badge">0 messages</span>
+      </div>
+      <div id="output"></div>
+    </section>
+  </main>
+
+  <script src="utils/nameHelper.js"></script>
+  <script src="utils/printHelper.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
